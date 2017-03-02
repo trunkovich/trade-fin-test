@@ -1,0 +1,38 @@
+
+<div class="logo">
+  <img src="assets/logo.png"
+       alt="Trade Fin">
+</div>
+
+<h1>Hello! Welcome back</h1>
+
+<p class="weak-font">Sign in to your account</p>
+
+
+<form novalidate
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit(loginForm.value)">
+
+  <md-input-container>
+    <input mdInput
+           placeholder="Email Address"
+           formControlName="email"
+           name="login"
+           type="text">
+  </md-input-container>
+
+  <md-input-container>
+    <input mdInput
+           placeholder="Password"
+           formControlName="password"
+           name="password"
+           type="password">
+  </md-input-container>
+
+  <button class="submit"
+          md-ripple
+          [disabled]="loginForm.invalid"
+          type="submit">Sign In</button>
+
+</form>
+

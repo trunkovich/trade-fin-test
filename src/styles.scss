@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'resets';
+@import '~@angular/material/core/theming/prebuilt/indigo-pink';
+
+html, body {
+  margin: 0;
+  padding: 0;
+  color: #3c3c3c;
+}
+
+.weak-font {
+  color: #bbbbbb;
+}
